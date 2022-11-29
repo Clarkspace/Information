@@ -1666,9 +1666,8 @@ table tr td.td_rank img { width: 15%; margin: 3px;}
 /* Banner */
 	
 	#banner-wrapper {
-		/* background: #c8d2bc url(images/bg1.webp); */
 		padding: 2em 0;
-		background: #0a162b;
+		background: #09192c;
 	}
 
 	#banner {
@@ -1717,7 +1716,7 @@ table tr td.td_rank img { width: 15%; margin: 3px;}
 
 	#copyright {
 		text-align: center;
-		color: #b3bbd8;
+		color: #A6A88F;
 		border-top: solid 1px #ced0b7;
 		padding: 3em 0 0 0;
 		margin: 3em 0 0 0;
