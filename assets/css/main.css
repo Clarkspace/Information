@@ -120,7 +120,7 @@ input::-moz-focus-inner {border: 0;padding: 0;}
 
 /* Container */
 
-#page-wrapper{/* height:100%; *//* position: relative; */}
+#page-wrapper{}
 
 
 	.container {
@@ -963,11 +963,26 @@ div.view_title a { position: absolute; top: 12px; right: 0; display: block; widt
     margin-top: 226px;
     left: 8px;
 }
+
+
+@keyframes circle{
+from{transform:rotate(0deg);)}
+	to{transform:rotate(360deg);)}
+	
+}
+
 #banner-wrapper .container .circle{
     z-index: 2;
     width: 550px;
-    transform: rotate(-94deg);
+    animation-name: circle;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
 }
+
+
+
 #banner-wrapper .container .spaceBg{
     z-index: 1;
     width: 100%;
