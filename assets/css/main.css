@@ -572,7 +572,7 @@ table tr td.td_rank img { width: 15%; margin: 3px;}
 	#banner-wrapper {
 	position: relative;
 	height: 500px;
-	min-width: 540px;
+	/* min-width: 540px; */
 	top: 32%;
 	z-index: -1;
 	}
@@ -936,7 +936,7 @@ div.view_title a { position: absolute; top: 12px; right: 0; display: block; widt
 #banner-wrapper .container .txt{
     z-index: 3;
     width: 240px;
-    margin-top: 226px;
+    margin-top: 230px;
     left: 8px;
 }
 
@@ -987,6 +987,19 @@ p.other-names {
 	content: "(닫기 \0023F6)"
 }
 
+
+@media screen and (max-width: 550px) {
+	#banner-wrapper{}
+	
+	#banner-wrapper .container .circle{
+    width: 100%;
+}
+	#banner-wrapper .container .txt{
+    width: 45%;
+}
+}
+
+
 @media screen and (max-width: 360px) {
 
 	#header{
@@ -996,15 +1009,15 @@ p.other-names {
     font-size: 16px;
 }
 
-	#banner-wrapper .container .circle{width: 320px;margin-top: 9px;margin-left: 1px;}
+	#banner-wrapper .container .circle{/* width: 320px; *//* margin-top: 9px; *//* margin-left: 1px; */}
 	
 	#banner-wrapper .container .txt{
-    width: 142px;
-    margin-top: 153px;
-    margin-left: 81px;
+    /* width: 142px; */
+    /* margin-top: 153px; */
+    /* margin-left: 81px; */
 }
 	#banner-wrapper{
-    height: 350px;
+    /* height: 350px; */
 }
 	#copyright{
     font-size: 15px;
