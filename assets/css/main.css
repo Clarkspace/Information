@@ -471,7 +471,7 @@ table tr td.td_rank img { width: 15%; margin: 3px;}
 
 	#header {
 		-ms-box-sizing: content-box;
-		margin: 2.5% 0;
+		margin-top: 20px;
 		padding: 10px;
 		border-top: 1px solid #6291f2;
 		border-bottom: 1px solid #6f56cd;
