@@ -151,27 +151,6 @@ strong.graph_rank em { font-style: inherit;}
 table tr td.td_rank { height: 47px; padding: 3px; text-align: center;}
 table tr td.td_rank img { width: 15%; margin: 3px;}
 
-.bg_olive	{ background-color: #4e9100;}
-.bg_orange	{ background-color: #ff6000;}
-.bg_blue	{ background-color: #007eff;}
-.bg_yellow	{ background-color: #d19800;}
-.bg_purple	{ background-color: #7a3db9;}
-.bg_hp	{ background-color: #1DDB16;}
-.bg_atk	{ background-color: #FF0000;}
-.bg_matk	{ background-color: #0100FF;}
-.bg_def	{ background-color: #FFA7A7;}
-.bg_mdef	{ background-color: #6B66FF;}
-.bg_cri	{ background-color: #990085;}
-.col_white	{ color: #fff;}
-.col_red	{ color: #ff0000;}
-.col_orange	{ color: #ff6000;}
-.col_pink	{ color: #ff7878;}
-.col_blue	{ color: #007eff;}
-.col_sky	{ color: #41acff;}
-.col_green	{ color: #2ed95a;}
-.col_yellow { color: #d19800;}
-.col_purple { color: #7a3db9;}
-.col_olive	{ color: #4e9100;}
 /* Row */
 
 	.row {
@@ -494,7 +473,7 @@ table tr td.td_rank img { width: 15%; margin: 3px;}
 	#header {
 		-ms-box-sizing: content-box;
 		margin: 2.5% 0;
-		padding: 10px 20px;
+		padding: 10px 15px;
 		border-top: 1px solid #6291f2;
 		border-bottom: 1px solid #6f56cd;
 	}
@@ -517,8 +496,6 @@ table tr td.td_rank img { width: 15%; margin: 3px;}
 		#header nav {
 			display: inline-block;
 			font-size: 1.4em;
-			vertical-align: top;
-			margin-top: 7px;
 		}
 
 			#header nav a {
@@ -526,7 +503,6 @@ table tr td.td_rank img { width: 15%; margin: 3px;}
 				text-decoration: none;
 				color: #fff;
 				outline: 0;
-				margin-left: 15px;
 			}
 
 				#header nav a.current-page-item {
@@ -649,7 +625,7 @@ table tr td.td_rank img { width: 15%; margin: 3px;}
 	#copyright {
 		text-align: center;
 		color: #6c7dae;
-		padding: 3em 0 0 0;
+		line-height: 24px;
 	}
 
 		#copyright a {
@@ -666,7 +642,7 @@ table tr td.td_rank img { width: 15%; margin: 3px;}
 		display: none;
 	}
 
-	@media screen and (max-width: 980px) {
+	@media  {
 
 		/* Basic */
 
@@ -1009,4 +985,31 @@ p.other-names {
 
 #misc-control.opened::before {
 	content: "(닫기 \0023F6)"
+}
+
+@media screen and (max-width: 360px) {
+
+	#header{
+    font-size: 15px;
+}
+	#header nav a{
+    font-size: 16px;
+}
+
+	#banner-wrapper .container .circle{width: 320px;margin-top: 9px;margin-left: 1px;}
+	
+	#banner-wrapper .container .txt{
+    width: 142px;
+    margin-top: 153px;
+    margin-left: 81px;
+}
+	#banner-wrapper{
+    height: 350px;
+}
+	#copyright{
+    font-size: 15px;
+}
+
+
+	
 }
