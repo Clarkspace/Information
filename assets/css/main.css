@@ -571,8 +571,7 @@ table tr td.td_rank img { width: 15%; margin: 3px;}
 	
 	#banner-wrapper {
 	position: relative;
-	height: 500px;
-	/* min-width: 540px; */
+	height: 600px;
 	top: 32%;
 	z-index: -1;
 	}
@@ -932,8 +931,8 @@ div.view_title a { position: absolute; top: 12px; right: 0; display: block; widt
 #banner-wrapper .container .txt{
     z-index: 3;
     width: 240px;
-    margin-top: 230px;
-    left: 8px;
+    margin-top: 276px;
+    left: 4px;
 }
 
 
