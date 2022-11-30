@@ -73,7 +73,6 @@ input::-moz-focus-inner {border: 0;padding: 0;}
 	}
 
 	p, ul {
-		margin-bottom: 1.25em;
 	}
 
 	p {
@@ -625,7 +624,7 @@ table tr td.td_rank img { width: 15%; margin: 3px;}
 
 	#copyright {
 		text-align: center;
-		color: #6c7dae;
+		color: #697688;
 		line-height: 24px;
 	}
 
