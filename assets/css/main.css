@@ -1,9 +1,3 @@
-/*
-	Minimaxing by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -14,55 +8,22 @@ form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
-section, summary, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-}
-
+section, summary, time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;}
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;}
+footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1.3;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: '';content: none;}
 
-body {
-	line-height: 1.3;
-}
-
-ol, ul {
-	list-style: none;
-}
-
-blockquote, q {
-	quotes: none;
-}
-
-	blockquote:before, blockquote:after, q:before, q:after {
-		content: '';
-		content: none;
-	}
-
-body {
-	-webkit-text-size-adjust: none;
-}
-
-mark {
-	background-color: transparent;
-	color: inherit;
-}
-
-input::-moz-focus-inner {
-	border: 0;
-	padding: 0;
-}
+body {-webkit-text-size-adjust: none;}
+mark {background-color: transparent;color: inherit;}
+input::-moz-focus-inner {border: 0;padding: 0;}
 
 
 /* Basic */
 
-	html {
-		box-sizing: border-box;
-	}
-
+	html {box-sizing: border-box;}
 	*, *:before, *:after {
 		box-sizing: inherit;
 	}
@@ -901,107 +862,6 @@ table tr td.td_rank img { width: 15%; margin: 3px;}
 
 /* Small */
 
-	@media screen and (max-width: 736px) {
-
-		/* Basic */
-
-			body {
-				font-size: 13pt;
-			}
-
-			h2 {
-				font-size: 1.4em;
-			}
-
-			h3 {
-				font-size: 1.2em;
-			}
-
-			h4 {
-				font-size: 1em;
-			}
-
-		/* Reusable */
-
-			ul.small-image-list li img {
-				width: 100px;
-			}
-
-			ul.big-image-list li img {
-				width: 100px;
-			}
-
-			ul.link-list {
-				margin: 0 0 1em 0;
-			}
-
-			article.blog-post .comments {
-				display: block;
-				position: relative;
-				top: -0.5em;
-				margin: 0 0 0.5em 0;
-			}
-
-			.button {
-				font-size: 1em;
-			}
-
-			.blog-post-image {
-				width: 100%;
-			}
-
-		/* Banner */
-
-			#banner-wrapper {
-				/* background: #000000 url(images/bg1.webp); */
-				padding: 20px 0;
-			}
-
-			#banner {
-				box-shadow: inset 0 0 0 10px #fff;
-				padding: 4em 1em;
-			}
-
-				#banner h2 {
-					font-size: 2em;
-					letter-spacing: -2px;
-					line-height: 1.25em;
-				}
-
-				#banner span {
-					font-size: 1.25em;
-					letter-spacing: -1px;
-					line-height: 1.25em;
-				}
-
-		/* Main */
-
-			#main {
-				padding: 40px 0;
-			}
-
-		/* Footer */
-
-			#footer-wrapper {
-				padding: 40px 0;
-			}
-
-		/* Copyright */
-
-			#copyright {
-				text-align: center;
-				color: #A6A88F;
-				padding: 30px 0 0 0;
-				font-size: 0.8em;
-				line-height: 1.5em;
-			}
-
-				#copyright a {
-					color: #A6A88F;
-				}
-
-	}
-	
 /* Slideshow container */
 .slideshow-container {
   max-width: 800px;
