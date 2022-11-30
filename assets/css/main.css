@@ -73,7 +73,7 @@ input::-moz-focus-inner {
 
 	body {
 		font-size: 13.5pt;
-		background-color: #000;
+		background-color: #030f1f;
 		color: #878e83;
 		letter-spacing: -1px;
 	}
@@ -1702,7 +1702,7 @@ table tr td.td_rank img { width: 15%; margin: 3px;}
 
 	#main {
 		background: #030f1f;
-		background: linear-gradient(#030f1f, #000);
+		/* background: linear-gradient(#030f1f, #000); */
 		padding: 4em 0;
 	}
 
@@ -1717,7 +1717,6 @@ table tr td.td_rank img { width: 15%; margin: 3px;}
 	#copyright {
 		text-align: center;
 		color: #A6A88F;
-		border-top: solid 1px #ced0b7;
 		padding: 3em 0 0 0;
 		margin: 3em 0 0 0;
 	}
