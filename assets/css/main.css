@@ -1555,12 +1555,10 @@ table tr td.td_rank img { width: 15%; margin: 3px;}
 		-ms-box-sizing: content-box;
 		box-sizing: content-box;
 		position: relative;
-		margin: 2.5% 0 2.5% 0;
-		padding: 0 40px 0 40px;
-		border-radius: 10px;
-		border: 1px solid #a5baed;
-		background-color: #1e2955;
-		height: 86px;
+		margin: 2.5% 0;
+		padding: 0 40px;
+		border-top: 1px solid #6291f2;
+		border-bottom: 1px solid #6f56cd;
 	}
 
 		#header h1 {
