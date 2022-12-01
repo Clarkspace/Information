@@ -57,11 +57,13 @@
 
 <script>
 	
-var body = document.getElementByTagName("body");	
+	
 function toggle(){
-	body.classList.toggle("nav-visible");
+	document.getElementByTagName("body").classList.toggle("nav-visible");
 }
-
+	
+var body = document.getElementByTagName("body");
+	
 window.onresize = function(event){
 	window.innerWidth<=980?body.classList.remove("nav-visible");
 }
