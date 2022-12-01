@@ -21,7 +21,7 @@ mark {background-color: transparent;color: inherit;}
 input::-moz-focus-inner {border: 0;padding: 0;}
 html {box-sizing: border-box;}
 @-ms-viewport {width: device-width;}
-body {font-size: 13.5pt;background-color: #030f1f;color: #878e83;letter-spacing: -1px;}
+body {font-size: 13.5pt;background-color: #030f1f;color: #878e83;letter-spacing: -1px;background: no-repeat center;background-size: cover;}
 h1, h2, h3, h4 {color: #007897;font-weight: normal;}
 h1 {text-transform: lowercase;letter-spacing: -1px;margin-bottom: 1em;}
 h2 {text-transform: lowercase;font-size: 1.6em;letter-spacing: -1px;margin-bottom: 1em;}
@@ -62,8 +62,14 @@ table tr td.td_rank img { width: 15%; margin: 3px;}
 
 		html, body {
 				overflow-x: hidden;
+				min-width: 320px;
 			}
-
+#page-wrapper{
+    height: 100%;
+}
+#header-wrapper{
+    margin-top: 20px;
+}
 	#header {
 		-ms-box-sizing: content-box;
 		margin-top: 20px;
@@ -99,7 +105,7 @@ table tr td.td_rank img { width: 15%; margin: 3px;}
 
 /* Banner */
 	
-	#banner-wrapper {position: relative;height: 600px;top: 32%;z-index: -1;}
+	#banner-wrapper {position: relative;height: 50%;margin-top: 70px;z-index: -1;}
 	#banner {
 		position: relative;
 		width: 100%;
@@ -126,7 +132,7 @@ table tr td.td_rank img { width: 15%; margin: 3px;}
 
 /* Footer */
 	#footer-wrapper {padding: 4em 0;}
-	#copyright {text-align: center;color: #697688;line-height: 24px;}
+	#copyright {text-align: center;color: #697688;margin-top: 50px;position: fixed;width: 100%;bottom: 40px;}
 	#copyright a {color: #7e84d2;text-decoration: none;}
 
 
@@ -174,7 +180,6 @@ table tr td.td_rank img { width: 15%; margin: 3px;}
 #banner-wrapper .container .txt{
     z-index: 3;
     width: 240px;
-    margin-top: 276px;
     left: 4px;
 }
 
@@ -187,7 +192,7 @@ to{transform:rotate(360deg);)}
 
 #banner-wrapper .container .circle{
     z-index: 2;
-    width: 550px;
+    max-width: 550px;
     animation-name: circle;
     animation-duration: 7s;
     animation-iteration-count: infinite;
@@ -205,7 +210,8 @@ p.other-names {font-size: 15px;}
 
 
 @media screen and (max-width: 550px) {
-	#banner-wrapper{}
+	#banner-wrapper{
+}
 	#header nav a{font-size: 19px;}
 	#banner-wrapper .container .circle{width: 100%;}
 	#banner-wrapper .container .txt{width: 45%;}
@@ -223,14 +229,12 @@ p.other-names {font-size: 15px;}
  
 @media screen and (max-width: 980px) {
 		
-			#page-wrapper {padding-top: 44px;transform: translateX(0);transition-duration: 500ms;}
+			#page-wrapper {transform: translateX(0);transition-duration: 500ms;}
 			.nav-visible #page-wrapper{transform: translateX(200px);transition-duration: 500ms;}
 			#header {display: none;}
+	#banner-wrapper{}
 			#titleBar {
 				display: block;
-				left: 0;
-				position: fixed;
-				top: 20px;
 				width: 100%;
 				text-align: center;
 				color: #fff;
