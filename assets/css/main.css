@@ -60,9 +60,7 @@ strong.graph_rank em { font-style: inherit;}
 table tr td.td_rank { height: 47px; padding: 3px; text-align: center;}
 table tr td.td_rank img { width: 15%; margin: 3px;}
 
-		html, body {
-				overflow-x: hidden;
-			}
+html, body {min-width:320px;overflow-x: hidden;}
 
 	#header {
 		-ms-box-sizing: content-box;
