@@ -60,7 +60,9 @@ strong.graph_rank em { font-style: inherit;}
 table tr td.td_rank { height: 47px; padding: 3px; text-align: center;}
 table tr td.td_rank img { width: 15%; margin: 3px;}
 
-html, body {min-width:320px;overflow-x: hidden;}
+		html, body {
+				overflow-x: hidden;
+			}
 
 	#header {
 		-ms-box-sizing: content-box;
@@ -142,8 +144,8 @@ html, body {min-width:320px;overflow-x: hidden;}
     margin: 2px 0 0 5px;
 }
 
-#navPanel{/* display:none; */height: 100%;left: 0;overflow-y: auto;position: fixed;top: 0;width: 200px;z-index: 100;background: #030f1f;color: #fff;transform: translateX(-200px);transition-duration: 1s;}
-.nav-visible #navPanel{display:block;transition-duration: 1s;transform: translateX(0);}
+#navPanel{/* display:none; */height: 100%;left: 0;overflow-y: auto;position: fixed;top: 0;width: 200px;z-index: 100;background: #030f1f;color: #fff;transform: translateX(-200px);transition-duration: 500ms;}
+.nav-visible #navPanel{display:block;transform: translateX(0);}
 
 
 #navPanel .link{display: block;color: #fff;border-bottom: solid 1px #192f4b;padding: 15px;text-decoration: none;font-size: 16px;}
@@ -221,8 +223,8 @@ p.other-names {font-size: 15px;}
  
 @media screen and (max-width: 980px) {
 		
-			#page-wrapper {padding-top: 44px;transform: translateX(0);transition-duration: 1s;}
-			.nav-visible #page-wrapper{transform: translateX(200px);transition-duration: 1s;}
+			#page-wrapper {padding-top: 44px;transform: translateX(0);transition-duration: 500ms;}
+			.nav-visible #page-wrapper{transform: translateX(200px);transition-duration: 500ms;}
 			#header {display: none;}
 			#titleBar {
 				display: block;
