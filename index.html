@@ -59,10 +59,10 @@
 	
 	
 function toggle(){
-	document.getElementByTagName("body").classList.toggle("nav-visible");
+	document.querySelector("body").classList.toggle("nav-visible");
 }
 	
-var body = document.getElementByTagName("body");
+var body = document.querySelector("body");
 	
 window.onresize = function(event){
 	window.innerWidth<=980?body.classList.remove("nav-visible");
