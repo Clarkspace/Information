@@ -69,7 +69,14 @@ var width  = window.innerWidth;
 if (width >= 980) {
 document.querySelector('body').classList.remove('nav-visible');
   }
+}
 
+window.onload = function () {
+
+var wall = document.getElementById("page-wrapper");
+
+wall.onclick =function(){
+document.querySelector('body').classList.remove('nav-visible');}
 
 }
 
