@@ -63,6 +63,17 @@ var body = document.querySelector('body');
 	body.classList.toggle('nav-visible');
 }
 	
+window.onresize=function(event){
+
+var width  = window.innerWidth;
+if (width >= 980) {
+document.querySelector('body').classList.remove('nav-visible');
+  }
+
+
+}
+
+	
 
 	
 	
