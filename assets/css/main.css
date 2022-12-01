@@ -138,14 +138,14 @@ table tr td.td_rank img { width: 15%; margin: 3px;}
     display: inline-block;
     width: 30px;
     height: 30px;
-    background: #000 no-repeat center;
+    background: no-repeat center;
     background-size: 25px;
     float: left;
     margin: 2px 0 0 5px;
 }
 
-#navPanel{display:none;height: 100%;left: 0;overflow-y: auto;position: fixed;top: 0;width: 200px;z-index: 100;background: #030f1f;color: #fff;}
-.nav-visible #navPanel{display:block;}
+#navPanel{/* display:none; */height: 100%;left: 0;overflow-y: auto;position: fixed;top: 0;width: 200px;z-index: 100;background: #030f1f;color: #fff;transform: translateX(-200px);transition-duration: 1s;}
+.nav-visible #navPanel{display:block;transition-duration: 1s;transform: translateX(0);}
 
 
 #navPanel .link{display: block;color: #fff;border-bottom: solid 1px #192f4b;padding: 15px;text-decoration: none;font-size: 16px;}
@@ -223,7 +223,7 @@ p.other-names {font-size: 15px;}
  
 @media screen and (max-width: 980px) {
 		
-			#page-wrapper {padding-top: 44px;}
+			#page-wrapper {padding-top: 44px;transform: translateX(0);transition-duration: 1s;}
 			.nav-visible #page-wrapper{transform: translateX(200px);transition-duration: 1s;}
 			#header {display: none;}
 			#titleBar {
