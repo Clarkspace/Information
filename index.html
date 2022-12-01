@@ -5,11 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
-<script>
-$(document).ready(function(){
-$(".toggle").on("click", function(){ $("body").toggleClass("nav-visible"); }
-});
-</script>
 <body class="">
 <div id="page-wrapper" style="
 ">
@@ -61,8 +56,14 @@ $(".toggle").on("click", function(){ $("body").toggleClass("nav-visible"); }
 <div id="navPanel"><nav><a class="link depth-0" href="index.html" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="indent-0"></span>메인</a><a class="link depth-0" href="hero.html" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="indent-0"></span>영웅</a><a class="link depth-0" target="_blank" href="https://docs.google.com/spreadsheets/d/1RZFY2N3RU-vctduO_Tg2e4RVoZvJAAveiMgPnW6VTQg/" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="indent-0"></span>장비</a><a class="link depth-0" href="troop.html" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="indent-0"></span>용병</a><a class="link depth-0" target="_blank" href="https://docs.google.com/spreadsheets/d/12fF-eW1Wp0pxOLZ4t3qwyDGakOUGQBths2mjo8hdS2E" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="indent-0"></span>배너표</a><a class="link depth-0" href="schedule.html" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="indent-0"></span>업데이트표</a><a class="link depth-0" href="event1.html" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="indent-0"></span>시공</a><a class="link depth-0" href="event2.html" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="indent-0"></span>비경</a><a class="link depth-0" href="event.html" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="indent-0"></span>이벤트</a></nav></div>
 
 <script>
-$(".toggle").on("click", function(){ $("body").toggleClass("nav-visible"); }
+$( document ).ready( function() {
+
+    $('#titleBar .toggle').on("click", function(){ 
+$('body').addClass('nav-visible'); 
+
+});
 </script>
+
 
 
 
