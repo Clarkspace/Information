@@ -2,7 +2,7 @@
 
 $('#titleBar .swap').on('click',function(){
 
-  $(body).addClass('.nav-visible');
+  $('body').addClass('.nav-visible');
   
 });
 
@@ -13,9 +13,3 @@ $('#titleBar .swap').on('click',function(){
 
 
 
-
-
-
-
-
-}
