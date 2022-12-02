@@ -56,17 +56,16 @@
 <div id="navPanel"><nav><a class="link depth-0" href="index.html" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="indent-0"></span>메인</a><a class="link depth-0" href="" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="indent-0"></span>YOUTUBE</a><a class="link depth-0" target="_blank" href="" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="indent-0"></span>개인채널</a><a class="link depth-0" href="langrisser.html" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="indent-0"></span>랑그릿사</a><a class="link depth-0" target="_blank" href="" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="indent-0"></span>아르케랜드</a></nav></div>
 
 <script>
-	
-function swap(){ document.querySelector('body').classList.add('nav-visible'); }
-	
-window.onresize=function(event){
 
-var width  = window.innerWidth;
-if (width >= 980) {document.querySelector('body').classList.remove('nav-visible');}
+document.querySelector('.swap').onclick=function(){ 
+
+
+var qw = !!document.querySelector('body').classList.contains('nav-visible');
+
+if ( qw == true ) { document.querySelector('body').classList.remove('nav-visible'); } else { document.querySelector('body').classList.add('nav-visible'); }
+ 
 
 }
-	
-
 
 	
 	
