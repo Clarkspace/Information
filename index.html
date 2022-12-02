@@ -13,7 +13,7 @@
 	<div id="header-wrapper">
 		<div class="container">
     <div id="titleBar" style="
-"><a href="#" class="swap" style="background-image: url(assets/img/icon_left_menu.png);"></a><span class="title">클라크공간</span></div><header id="header" style="
+"><a href="#" onclick="swap" style="background-image: url(assets/img/icon_left_menu.png);"></a><span class="title">클라크공간</span></div><header id="header" style="
 "> 
 					<h1><a href="index.html" id="logo">클라크공간</a></h1>
 					<nav id="nav">
@@ -57,20 +57,16 @@
 
 <script>
 	
+function swap(){ document.querySelector('body').classList.add('nav-visible'); }
+	
 window.onresize=function(event){
 
 var width  = window.innerWidth;
-if (width >= 980) {
-document.querySelector('body').classList.remove('nav-visible');
-  }
-
-document.querySelector('.swap').onclick=function(){ document.querySelector('body').classList.add('nav-visible'); }
-document.getElementById('page-wrapper').onclick=function(){ document.querySelector('body').classList.remove('nav-visible'); }
-
+if (width >= 980) {document.querySelector('body').classList.remove('nav-visible');}
 
 }
-
 	
+
 
 	
 	
