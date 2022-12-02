@@ -21,7 +21,7 @@ mark {background-color: transparent;color: inherit;}
 input::-moz-focus-inner {border: 0;padding: 0;}
 html {box-sizing: border-box;}
 @-ms-viewport {width: device-width;}
-body {font-size: 13.5pt;background-color: #030f1f;color: #878e83;letter-spacing: -1px;background: no-repeat center;background-size: cover;}
+body {font-size: 13.5pt;background-color: #030f1f;color: #878e83;letter-spacing: -1px;background: linear-gradient(0deg, #1c3352, #0b1528);}
 h1, h2, h3, h4 {color: #007897;font-weight: normal;}
 h1 {text-transform: lowercase;letter-spacing: -1px;margin-bottom: 1em;}
 h2 {text-transform: lowercase;font-size: 1.6em;letter-spacing: -1px;margin-bottom: 1em;}
@@ -62,8 +62,7 @@ table tr td.td_rank img { width: 15%; margin: 3px;}
 
 		html, body {
 				overflow-x: hidden;
-				min-width: 320px;
-			}
+				min-width: 320px;}
 #page-wrapper{
     height: 100%;
 }
