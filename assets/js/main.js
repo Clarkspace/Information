@@ -1,7 +1,7 @@
- $( document ).ready( function() {
+ $(document).ready( function() {
 
 $('#titleBar .swap').on('click',function(){
 
-  $('body').addClass('.nav-visible');
+  $('body').addClass('nav-visible');
   
 });
