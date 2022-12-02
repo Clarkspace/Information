@@ -140,7 +140,7 @@ table tr td.td_rank img { width: 15%; margin: 3px;}
 /* Small */
 
 #titleBar {display: none;}
-#titleBar .toggle{
+#titleBar .swap{
     display: inline-block;
     width: 30px;
     height: 30px;
@@ -150,7 +150,7 @@ table tr td.td_rank img { width: 15%; margin: 3px;}
     margin: 2px 0 0 5px;
 }
 
-#navPanel{/* display:none; */padding-top: 17px;height: 100%;left: 0;overflow-y: auto;position: fixed;top: 0;width: 200px;z-index: 100;/* background: #172344; */background: linear-gradient(180deg, #1c3352, #19254a);color: #fff;transform: translateX(-200px);transition-duration: 500ms;border-right: 2px solid #0b1629;box-sizing: border-box;}
+#navPanel{/* display:none; */padding-top: 17px;height: 100%;left: 0;overflow-y: auto;position: fixed;top: 0;width: 200px;z-index: 100;background: linear-gradient(180deg, #1c3352, #19254a);color: #fff;transform: translateX(-200px);transition-duration: 500ms;border-right: 2px solid #0b1629;box-sizing: border-box;}
 .nav-visible #navPanel{display:block;transform: translateX(0);}
 
 #navPanel nav{
