@@ -65,6 +65,8 @@ table tr td.td_rank img { width: 15%; margin: 3px;}
 				min-width: 320px;}
 #page-wrapper{
     height: 100%;
+    position: relative;
+    z-index: 1;
 }
 #header-wrapper{
     padding-top: 20px;
@@ -139,18 +141,19 @@ table tr td.td_rank img { width: 15%; margin: 3px;}
 
 /* Small */
 
-#titleBar {display: none;}
+#titleBar {display: none;transform: translateX(0);transition-duration: 500ms;}
 #titleBar .swap{
     display: inline-block;
     width: 30px;
     height: 30px;
     background: no-repeat center;
     background-size: 25px;
-    float: left;
-    margin: 2px 0 0 5px;
+    position: absolute;
+    top: 7px;
+    left: 6px;
 }
 
-#navPanel{/* display:none; */padding-top: 17px;height: 100%;left: 0;overflow-y: auto;position: fixed;top: 0;width: 200px;z-index: 100;background: linear-gradient(180deg, #1c3352, #19254a);color: #fff;transform: translateX(-200px);transition-duration: 500ms;border-right: 2px solid #0b1629;box-sizing: border-box;}
+#navPanel{/* display:none; */padding-top: 17px;height: 100%;left: 0;overflow-y: auto;position: fixed;top: 0;width: 200px;z-index: 20;background: linear-gradient(180deg, #1c3352, #19254a);color: #fff;transform: translateX(-200px);transition-duration: 500ms;border-right: 2px solid #0b1629;box-sizing: border-box;}
 .nav-visible #navPanel{display:block;transform: translateX(0);}
 
 #navPanel nav{
@@ -160,7 +163,7 @@ table tr td.td_rank img { width: 15%; margin: 3px;}
 }
 
 
-#navPanel .link{display: block;color: #d0dcff;border-bottom: 2px solid #0c172a;/* background: #0c162a; */padding: 15px;text-decoration: none;font-size: 16px;}
+#navPanel .link{display: block;color: #d0dcff;border-bottom: 2px solid #0c172a;padding: 15px;text-decoration: none;font-size: 16px;}
 #navPanel .link:first-child{}
 
 @media  {
@@ -237,15 +240,18 @@ p.other-names {font-size: 15px;}
 		
 			#page-wrapper {transform: translateX(0);transition-duration: 500ms;}
 			.nav-visible #page-wrapper{transform: translateX(200px);transition-duration: 500ms;}
-			#header {display: none;}
+			.nav-visible #titleBar {transform: translateX(200px);transition-duration: 500ms;}
+	#header {display: none;}
 	#banner-wrapper{}
 			#titleBar {
 				display: block;
 				width: 100%;
+				position: fixed;
+				top: 20px;
 				text-align: center;
 				color: #fff;
 				font-weight: bold;
-				z-index: 10;
+				z-index: 2;
 				padding: 5px 0;
 				font-size: 1.5em;
 				border-top: 1px solid #6291f2;
