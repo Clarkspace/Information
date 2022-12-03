@@ -62,7 +62,10 @@ table tr td.td_rank img { width: 15%; margin: 3px;}
 
 		html, body {
 				overflow-x: hidden;
-				min-width: 320px;}
+				overflow-y: hidden;
+				min-width: 320px;
+				height: 100%;
+				}
 #page-wrapper{
     height: 100%;
     position: relative;
@@ -90,7 +93,7 @@ table tr td.td_rank img { width: 15%; margin: 3px;}
 
 	#header nav {font-size: 1.4em;}
 
-	#header nav a {display: inline-block;text-decoration: none;color: #63799d;outline: 0;margin-right: 18px;font-size: 18px;font-weight: bold;}
+	#header nav a {display: inline-block;text-decoration: none;color: #fff;outline: 0;margin-right: 10px;}
 	#header nav a:last-child{margin-right: 0;}
 
 				#header nav a.current-page-item {
@@ -104,6 +107,88 @@ table tr td.td_rank img { width: 15%; margin: 3px;}
 
 				#header nav a:hover {color: #777cff;}
 
+
+/* star effect */
+
+#effect .star{
+    display: inline-block;
+    top:-1000;
+    left:-1000;
+    width: 120px;
+    height: 1px;
+    border-radius: 100%;
+    background: #fff;
+    position: absolute;
+    transform: rotateZ(45deg);
+    background: linear-gradient(268deg, white, transparent);
+    box-shadow: #6291f2 4px 0px 7px;
+}
+
+#effect .star.sprintA{
+animation-name: sprintA;
+animation-duration: 6s;
+animation-iteration-count: infinite;
+animation-delay: 1s;
+animation-timing-function:normal;
+}
+
+#effect .star.sprintB{
+animation-name: sprintB;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+animation-delay : 3s;
+animation-timing-function:normal;
+}
+
+#effect .star.sprintC{
+animation-name: sprintC;
+animation-duration: 7s;
+animation-iteration-count: infinite;
+animation-timing-function:normal;
+}
+
+#effect .star.sprintD{
+animation-name: sprintD;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+animation-delay : 4s;
+animation-timing-function:normal;
+}
+
+#effect .star.sprintE{
+animation-name: sprintE;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+animation-delay : 2s;
+animation-timing-function:normal;
+}
+
+
+
+@keyframes sprintA{
+from{top: -800;  left:500; }
+to{ top: 1000; left:2500; }
+}
+
+@keyframes sprintB{
+from{top: -1000;  left:-300; }
+to{ top: 1000; left:2000; }
+}
+
+@keyframes sprintC{
+from{top: -1200;  left:-1000; }
+to{ top: 1000; left:1500; }
+}
+
+@keyframes sprintD{
+from{top: -1400;  left:-1500; }
+to{ top: 1000; left:1000; }
+}
+
+@keyframes sprintE{
+from{top: -1700;  left:-2000; }
+to{ top: 1000; left:500; }
+}
 
 /* Banner */
 	
@@ -153,7 +238,7 @@ table tr td.td_rank img { width: 15%; margin: 3px;}
     left: 6px;
 }
 
-#navPanel{/* display:none; */height: 100%;left: 0;overflow-y: auto;position: fixed;top: 0;width: 200px;z-index: 20;background: linear-gradient(180deg, #2a538b, #352f60);color: #fff;transform: translateX(-200px);transition-duration: 500ms;border-right: 1px solid #0b1629;box-sizing: border-box;}
+#navPanel{/* display:none; */padding-top: 17px;height: 100%;left: 0;overflow-y: auto;position: fixed;top: 0;width: 200px;z-index: 20;background: linear-gradient(180deg, #1c3352, #19254a);color: #fff;transform: translateX(-200px);transition-duration: 500ms;border-right: 2px solid #0b1629;box-sizing: border-box;}
 .nav-visible #navPanel{display:block;transform: translateX(0);}
 
 #navPanel nav{
@@ -163,7 +248,7 @@ table tr td.td_rank img { width: 15%; margin: 3px;}
 }
 
 
-#navPanel .link{display: block;color: #f6f8ff;border-bottom: 1px solid #0c172a;padding: 22px 15px;text-decoration: none;font-size: 18px;}
+#navPanel .link{display: block;color: #d0dcff;border-bottom: 2px solid #0c172a;padding: 15px;text-decoration: none;font-size: 16px;}
 #navPanel .link:first-child{}
 
 @media  {
