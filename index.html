@@ -1,53 +1,46 @@
 <html lang="en"><head>
-	<meta charset="UTF-8">
-	<title>클라크공간</title>
-	<link rel="icon" type="image/png" href="favicon.jpg">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
-</head>
-<body class="" style="">
-	
-<div id="page-wrapper" style="
-">
-	<!-- Header -->
-	<div id="header-wrapper">
-		<div class="container">
-    <div id="titleBar" style="
-"><a href="#" class="swap" style="background-image: url(assets/img/icon_left_menu.png);"></a><span class="title">클라크공간</span></div><header id="header" style="
-"> 
-					<h1><a href="index.html" id="logo">클라크공간</a></h1>
-					<nav id="nav">
-<a href="https://www.youtube.com/@Clarkspace" target="_blank">YOUTUBE</a><a href="https://arca.live/b/clarkspace" target="_blank">개인채널</a><a href="https://clarkspace.github.io/Information/langrisser.html" target="_blank">랑그릿사</a><a href="#" target="_blank" style="">아르케랜드</a>
-</nav>
-				</header>
-			</div>
-		
-		
-	</div>
-	<!-- Banner -->
-	<div id="banner-wrapper">
-		<div class="container" style="
-    background: #030f1f;
-">
-		
-
-
-		</div>
-	</div>
-	<!-- Main -->
-	<div id="main">
-		<div class="container"></div>
-	</div>
-	<div id="copyright">
-    # Contact Us : youbibada@naver.com<br>Copyright ©Clarkspace. All Rights Reserved.
-    
-</div>
-
-	
-</div>
-
-<div id="navPanel"><nav><a class="link depth-0" href="index.html" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="indent-0"></span>메인</a><a class="link depth-0" href="" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="indent-0"></span>YOUTUBE</a><a class="link depth-0" target="_blank" href="" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="indent-0"></span>개인채널</a><a class="link depth-0" href="langrisser.html" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="indent-0"></span>랑그릿사</a><a class="link depth-0" target="_blank" href="" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><span class="indent-0"></span>아르케랜드</a></nav></div>
+<meta charset="UTF-8">
+<title>클라크공간</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+<link rel="icon" type="image/png" href="favicon.jpg">
 <script src="assets/js/jquery-3.6.1.min.js"></script>
 <script src="assets/js/main.js"></script>
-</body>
-</html>
+
+</head>
+
+<body>
+
+<div id="page-wrapper">
+   <div id="header-wrapper">
+      <div class="container">
+         <header id="header"> 
+            <h1><a href="index.html" id="logo">클라크공간</a></h1>
+            <nav id="nav">
+               <a href="https://www.youtube.com/@Clarkspace" target="_blank">YOUTUBE</a><a href="https://arca.live/b/clarkspace" target="_blank">개인채널</a><a href="https://clarkspace.github.io/Information/langrisser.html" target="_blank">랑그릿사</a><a href="#" target="_blank">아르케랜드</a>
+            </nav>
+         </header>
+      </div>
+   </div>
+   <div id="banner-wrapper"><div class="container" style="background: #030f1f;"></div></div>
+   <div id="main"><div class="container"></div></div>
+   <div id="copyright"># Contact Us : youbibada@naver.com<br>Copyright ©Clarkspace. All Rights Reserved.</div>
+</div>
+
+<div id="titleBar"><a href="#" class="swap" style="background-image: url(assets/img/icon_left_menu.png);"></a><span class="title">클라크공간</span></div>
+<div id="navPanel">
+<nav>
+<a href="index.html" class="link">메인</a><a href="https://www.youtube.com/@Clarkspace" target="_blank" class="link">YOUTUBE</a><a href="https://arca.live/b/clarkspace" target="_blank" class="link">개인채널</a><a href="https://clarkspace.github.io/Information/langrisser.html" target="_blank" class="link">랑그릿사</a><a href="#" target="_blank" class="link">아르케랜드</a>
+</nav>
+</div>
+
+<script>
+$("#titleBar .swap").on('click',function(){  $("body").toggleClass("nav-visible") });
+$("#page-wrapper").on('click',function(){  $("body").removeClass("nav-visible") });
+$(window).resize(function(){ 
+if (window.innerWidth >= 980) { $("body").removeClass("nav-visible"); $("#navPanel").css('transition-duration','initial'); }
+else if (window.innerWidth < 980){ $("#navPanel").css('transition-duration','500ms'); }
+});
+</script>
+
+</body></html>
