@@ -21,7 +21,7 @@ mark {background-color: transparent;color: inherit;}
 input::-moz-focus-inner {border: 0;padding: 0;}
 html {box-sizing: border-box;}
 @-ms-viewport {width: device-width;}
-body {font-size: 13.5pt;background-color: #030f1f;color: #878e83;letter-spacing: -1px;background: linear-gradient(0deg, #1c3352, #0b1528);}
+body {font-size: 13.5pt;background-color: #030f1f;color: #878e83;letter-spacing: -1px;background: linear-gradient(0deg, #3f4f9a, #0f1225);}
 h1, h2, h3, h4 {color: #007897;font-weight: normal;}
 h1 {text-transform: lowercase;letter-spacing: -1px;margin-bottom: 1em;}
 h2 {text-transform: lowercase;font-size: 1.6em;letter-spacing: -1px;margin-bottom: 1em;}
@@ -59,54 +59,30 @@ strong.graph_rank { position: absolute; top: 8px; right: 1px;}
 strong.graph_rank em { font-style: inherit;}
 table tr td.td_rank { height: 47px; padding: 3px; text-align: center;}
 table tr td.td_rank img { width: 15%; margin: 3px;}
+html, body {overflow-x: hidden;overflow-y: hidden;min-width: 320px;height: 100%;}
 
-		html, body {
-				overflow-x: hidden;
-				overflow-y: hidden;
-				min-width: 320px;
-				height: 100%;
-				}
-#page-wrapper{
-    height: 100%;
-    position: relative;
-    z-index: 1;
+
+#header-wrapper{}
+#header {padding: 10px;border-top: 1px solid #6291f2;border-bottom: 1px solid #6f56cd;text-align: center;position: fixed;top: 20px;width: 100%;}
+#header h1 {color: #fff;font-size: 1.8em;letter-spacing: -2px;margin: 0 0 10px 0;}
+#header h1 a {color: #fff;text-decoration: none;font-weight: bold;}
+#header nav {font-size: 1.4em;}
+#header nav a {display: inline-block;text-decoration: none;color: #fff;outline: 0;margin-right: 10px;}
+#header nav a:last-child{margin-right: 0;}
+#header nav a:hover {color: #777cff;}
+
+#main .container {background-size: contain;width: 100%;height: 100%;}
+#main .container .bottom-bg{
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat-x;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-width: 1040px;
+    height: 312px;
 }
-#header-wrapper{
-    padding-top: 20px;
-    box-sizing: border-box;
-}
-	#header {
-		-ms-box-sizing: content-box;
-		margin-top: 20px;
-		padding: 10px;
-		border-top: 1px solid #6291f2;
-		border-bottom: 1px solid #6f56cd;
-		text-align: center;}
-
-	#header h1 {
-			color: #fff;
-			font-size: 1.8em;
-			letter-spacing: -2px;
-			margin: 0 0 10px 0;}
-
-	#header h1 a {color: #fff;text-decoration: none;font-weight: bold;}
-
-	#header nav {font-size: 1.4em;}
-
-	#header nav a {display: inline-block;text-decoration: none;color: #fff;outline: 0;margin-right: 10px;}
-	#header nav a:last-child{margin-right: 0;}
-
-				#header nav a.current-page-item {
-					background-image: -moz-linear-gradient(top, #007b99, #007897);
-					background-image: -webkit-linear-gradient(top, #007b99, #007897);
-					background-image: -ms-linear-gradient(top, #007b99, #007897);
-					background-image: linear-gradient(top, #007b99, #007897);
-					background-color: #007897;
-					box-shadow: inset 0px 1px 5px 1px rgba(0, 0, 0, 0.1), 0px 0px 5px 1px rgba(255, 255, 255, 0.1);
-				}
-
-				#header nav a:hover {color: #777cff;}
-
+#page-wrapper{height: 100%;position: relative;z-index: 1;}
 
 /* star effect */
 
@@ -219,7 +195,7 @@ to{ top: 1000; left:500; }
 
 /* Footer */
 	#footer-wrapper {padding: 4em 0;}
-	#copyright {text-align: center;color: #69869e;margin-top: 50px;position: fixed;width: 100%;bottom: 20px;}
+	#copyright {text-align: center;color: #7b8cd7;margin-top: 50px;position: fixed;width: 100%;bottom: 20px;}
 	#copyright a {color: #7e84d2;text-decoration: none;}
 
 
@@ -238,7 +214,7 @@ to{ top: 1000; left:500; }
     left: 6px;
 }
 
-#navPanel{/* display:none; */padding-top: 17px;height: 100%;left: 0;overflow-y: auto;position: fixed;top: 0;width: 200px;z-index: 20;background: linear-gradient(180deg, #1c3352, #19254a);color: #fff;transform: translateX(-200px);transition-duration: 500ms;border-right: 2px solid #0b1629;box-sizing: border-box;}
+#navPanel{/* display:none; */padding-top: 17px;height: 100%;left: 0;overflow-y: auto;position: fixed;top: 0;width: 200px;z-index: 20;background: linear-gradient(180deg, #384583, #251e5c);color: #fff;transform: translateX(-200px);transition-duration: 500ms;border-right: 1px solid #261f5d;box-sizing: border-box;}
 .nav-visible #navPanel{display:block;transform: translateX(0);}
 
 #navPanel nav{
@@ -248,7 +224,7 @@ to{ top: 1000; left:500; }
 }
 
 
-#navPanel .link{display: block;color: #d0dcff;border-bottom: 2px solid #0c172a;padding: 15px;text-decoration: none;font-size: 16px;}
+#navPanel .link{display: block;color: #d0dcff;border-bottom: 1px solid #1c1938;padding: 15px;text-decoration: none;font-size: 16px;}
 #navPanel .link:first-child{}
 
 @media  {
