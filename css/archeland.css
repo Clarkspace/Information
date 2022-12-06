@@ -1,0 +1,21 @@
+body{background: linear-gradient(0deg, #f1c2a3, #5682cc);}
+
+#main .heroCard{
+    width: 100%;
+    padding: 0 28px;
+    margin: 180px 0 0 0;
+    box-sizing: border-box;
+}
+
+#main .heroCard .hero{
+    border: 3px solid #ccc;
+    cursor:pointer;
+}
+
+
+#main .heroCard .hero.fire{ border-color: red; }
+#main .heroCard .hero.water{ border-color: blue; }
+#main .heroCard .hero.elect{ border-color: green; }
+#main .heroCard .hero.light{ border-color: yellow; }
+#main .heroCard .hero.dark{ border-color: #000; }
+#main .heroCard .hero.null{ border-color: black; }

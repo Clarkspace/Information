@@ -1,0 +1,226 @@
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1.3;}
+ol, ul, li {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: '';content: none;}
+body {-webkit-text-size-adjust: none;}
+body,html{}
+mark {background-color: transparent;color: inherit;}
+input::-moz-focus-inner {border: 0;padding: 0;}
+html {box-sizing: border-box;}
+@-ms-viewport {width: device-width;}
+h1, h2, h3, h4 {color: #007897;font-weight: normal;}
+h1 {text-transform: lowercase;letter-spacing: -1px;margin-bottom: 1em;}
+h2 {text-transform: lowercase;font-size: 1.6em;letter-spacing: -1px;margin-bottom: 1em;}
+h3, h4 {color: #283121;margin-bottom: 0.5em;}
+h3 {font-size: 1.2em;margin-bottom: 0.8em;}
+h4 {font-size: 1em;}
+strong {color: #474e43;}
+ul {padding: 0;}
+a {text-decoration: none;}
+a:hover {text-decoration: none;}
+
+html, body {min-width: 320px;height: 100%;width: 100%;background: url(../img/coverBg.png);}
+body {  font-family: Gulim, "ÃƒÂªÃ‚ÂµÃ‚Â´ÃƒÂ«Ã‚Â¦Ã‚Â¼", "Malgun Gothic", "ÃƒÂ«Ã‚Â§Ã¢â‚¬ËœÃƒÂ¬Ã‚ÂÃ¢â€šÂ¬ÃƒÂªÃ‚Â³Ã‚Â ÃƒÂ«Ã¢â‚¬ÂÃ¢â‚¬Â¢", helvetica, "Apple SD Gothic Neo", AppleGothic, Roboto, Dotum, sans-serif;  }
+
+#header{
+    height: 80px;
+    padding: 0 0 0 0;
+    margin: 0 auto;
+    background: #fff;
+    font-family: "malgun_gothic";
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    opacity: 1;
+    min-width: 320px;
+}
+#header .logo{display: inline-block;margin: 0 8px 0 15px;}
+#header .logo img{
+    width: 215px;
+    margin-top: 16px;
+}
+#header .nav{display: inline-block;vertical-align: top;height: 100%;}
+#header .small_nav{
+    background: #fff url("../img/Clark_Sbtn.png") no-repeat center;
+    background-size: contain;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    right: 10px;
+    top: 17px;
+    border: 5px solid #fff;
+    box-sizing: border-box;
+    display: none;
+}
+#header .nav a{
+    font-size: 25px;
+    display: inline-block;
+    padding: 23px 13px;
+    height: 100%;
+    box-sizing: border-box;
+    background: white;
+    color: #1a4a70;
+}
+#header .nav a:hover{background:#f9f9f9;}
+#wrap{/* background: #f8f8f8; *//* background: linear-gradient(0deg, #3f4f9a, #0f1225); */height: 100%;position: relative;}
+#wrap .coverBg{
+    width: 100%;
+    display: inline-block;
+    background-size: cover;
+    background-position-x: center;
+    text-align: center;
+    margin-top: 80px;
+}
+#wrap .coverBg img{padding: 40px 0;max-width: 500px;width: 100%;}
+
+#wrap .container{
+    background: #fff;
+    padding: 3% 0;
+    position: relative;
+    z-index: 1;
+}
+
+#wrap .container .game{
+    width: 94%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+}
+#wrap .container .game>div{
+    border-radius: 20px;
+    display: inline-block;
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+
+#wrap .container .game>div .subCv{
+    opacity: 0;
+    display: block;
+    height: 100%;
+    color: #fff;
+    background: #101327;
+    border-radius: 20px;
+    padding-top: 80px;
+    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    font-size: 70px;
+    font-family:
+    "malgun_gothic";
+    transition-duration: 0.5s;
+}
+
+#wrap .container .game>div .subCv:hover{opacity:0.7;}
+
+#wrap .container .game>div .subCv>small{
+    display: block;
+    font-size: 40px;
+}
+
+#wrap .container .game .langrisser{
+    background-image: url(../img/archeland/lang_bg.jpg);
+    background-size: cover;
+    background-position: top;
+    margin-bottom: 20px;
+}
+#wrap .container .game .archeland{
+    background-image: url(../img/archeland/arc_movie.gif);
+    background-size: cover;
+    background-position: bottom;
+}
+
+#wrap .container .game .archeland video{
+    width: 100%;
+    height: auto;
+}
+
+
+#wrap .backHole{
+    width: 100%;
+    position: fixed;
+    top: 760px;
+    z-index: 0;
+    text-align: center;
+    transition-duration: 0.5s;
+}
+
+@keyframes hole{
+from{transform : rotate(0deg);}
+to{transform :rotate(360deg)}
+    
+}
+
+#wrap .backHole .hole{
+    width: 400px;
+    height: 400px;
+    background: url(../img/circle.png) no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    transition-duration: 0.5s;
+    animation-name:hole;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: normal;
+    animation-timing-function: ease-in;
+}
+
+
+
+
+/* side bar */
+#navPanel{/* display:none; */padding-top: 80px;height: 100%;left: 0;overflow-y: auto;position: fixed;top: 0;width: 230px;z-index: 9;background: linear-gradient(0deg, #454787, #222b55);/* background-color: #222b55; */color: #fff;transform: translateX(-230px);transition-duration: 500ms;box-sizing: border-box;}
+.nav-visible #navPanel{display:block;transform: translateX(0);}
+
+#navPanel nav {}
+#navPanel nav a{}
+#navPanel .link{display: block;color: #ffffff;border-bottom: 1px solid #626aa3;padding: 15px;text-decoration: none;font-size: 16px;}
+#navPanel .link:first-child{}
+
+
+
+
+/* footer */
+#footer{display: none;position: absolute;bottom: 0;width: 100%;background: #fff;text-align: center;padding: 15px 0;font-size: 20px;font-weight: bold;color: #3d4c95;}
+
+
+/* media query */
+
+
+@media screen and (max-width:410px){
+#wrap .backHole{
+    top: 730px;
+}
+#wrap .backHole .hole{width:320px; height:320px;}
+}
+@media screen and (max-width:572px){
+#wrap .container .game>div .subCv{font-size:40px;padding-top: 105px;}
+#wrap .container .game>div .subCv>small{font-size:30px;}
+}
+
+
+@media screen and (max-width:741px){
+#header .nav{display:none;}
+#header .small_nav{display:inline;}
+}
+
