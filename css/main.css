@@ -157,7 +157,7 @@ body {  font-family: Gulim, "ÃƒÂªÃ‚ÂµÃ‚Â´ÃƒÂ«Ã‚Â¦Ã‚Â�
 #wrap .backHole{
     width: 100%;
     position: fixed;
-    top: 760px;
+    top: 40%;
     z-index: 0;
     text-align: center;
     transition-duration: 0.5s;
